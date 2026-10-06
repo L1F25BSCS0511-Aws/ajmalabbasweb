@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ajmal Abbas | AI Engineer & CEO of Bajwa Traders</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b1020;--ink:#eceffd;--mute:#9aa3c7;--line:#243058;--card:#121a33;--a:#ffb547;--b:#7b93ff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f5fc;--ink:#10172f;--mute:#566089;--line:#d4d9f0;--card:#fff;--a:#c46a00;--b:#3350e0}}
+:root[data-theme="light"]{--bg:#f4f5fc;--ink:#10172f;--mute:#566089;--line:#d4d9f0;--card:#fff;--a:#c46a00;--b:#3350e0}
+:root[data-theme="dark"]{--bg:#0b1020;--ink:#eceffd;--mute:#9aa3c7;--line:#243058;--card:#121a33;--a:#ffb547;--b:#7b93ff}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Manrope,system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(420px circle at var(--mx,70%) var(--my,30%),color-mix(in srgb,var(--b) 28%,transparent),transparent 70%)}
+.role{color:var(--mute);font-weight:500;margin:0 0 18px}
+h1{font:700 clamp(42px,9vw,112px)/.95 'Space Grotesk',system-ui,sans-serif;margin:0;letter-spacing:-.03em;display:flex;flex-direction:column;position:relative}
+.row{display:flex;flex-wrap:nowrap}
+.ch{display:inline-block;transition:transform .25s cubic-bezier(.2,.8,.2,1),color .25s;will-change:transform}
+.ch.lock{color:var(--ink)}
+.ch.scr{color:var(--a)}
+.ch.hot{color:var(--a)}
+.sub{margin:28px 0 0;max-width:560px;color:var(--mute);font-size:19px}
+.sub b{color:var(--ink);font-weight:700}
+.badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.badge{border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:15px;background:var(--card)}
+.badge.ceo{border-color:var(--a);color:var(--a);font-weight:700}
+section{padding:84px 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(24px,3.4vw,34px)/1.1 'Space Grotesk',system-ui,sans-serif;margin:0 0 40px;letter-spacing:-.02em}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:48px}
+.about p{margin:0 0 16px;max-width:60ch}
+.facts{display:grid;gap:18px;align-content:start}
+.fact{border-left:3px solid var(--b);padding-left:16px}
+.fact span{display:block;color:var(--mute);font-size:14px}
+.fact strong{font-weight:700}
+.fact.ceo{border-color:var(--a)}
+.proj{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:28px 48px;padding:36px 0;border-bottom:1px solid var(--line)}
+.proj:first-of-type{padding-top:0}
+.proj h3{font:700 clamp(18px,1.9vw,21px)/1.2 'Space Grotesk',system-ui,sans-serif;letter-spacing:-.01em;text-wrap:balance;margin:0 0 12px}
+.proj p{margin:0;color:var(--mute);max-width:52ch}
+.flow{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line);display:grid;gap:18px;align-content:center}
+.flow li{position:relative;font-size:15.5px;line-height:1.45}
+.flow li::before{content:"";position:absolute;left:-29px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--b)}
+.flow li:last-child::before{background:var(--a);border-color:var(--a)}
+.flow small{display:block;color:var(--mute);font-size:13px}
+.proj:hover .flow{border-left-color:var(--b)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tags span{font-size:14px;border:1px solid var(--line);border-radius:6px;padding:2px 10px}
+.cta{display:inline-block;margin-top:8px;background:var(--a);color:#14100a;font-weight:700;padding:14px 26px;border-radius:10px;text-decoration:none;transition:transform .2s}
+.cta:hover{transform:translateY(-3px)}
+.social{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.social a{border:1px solid var(--line);border-radius:999px;padding:8px 20px;font-weight:500;text-decoration:none;background:var(--card);transition:border-color .2s,color .2s}
+.social a:hover{border-color:var(--a);color:var(--a)}
+footer{padding:36px 0;color:var(--mute);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:720px){.about,.proj{grid-template-columns:1fr}.proj{gap:22px}}
+@media (prefers-reduced-motion:reduce){.ch{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="glow" id="glow"></div>
+  <div class="wrap">
+    <p class="role">Artificial Intelligence Engineer · Lahore, Pakistan</p>
+    <h1 id="name" aria-label="Ajmal Abbas"><span class="row" data-t="AJMAL"></span><span class="row" data-t="ABBAS"></span></h1>
+    <p class="sub">I design AI agents that handle the repetitive work in a business, so teams can spend their time on decisions and customers. Engineer at <b>NJ Corporation</b>, CEO of <b>Bajwa Traders</b>.</p>
+    <div class="badges">
+      <span class="badge ceo">CEO, Bajwa Traders</span>
+      <span class="badge">AI Engineer, NJ Corporation</span>
+      <span class="badge">BSCS, University of Central Punjab</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about"><div class="wrap about">
+  <div>
+    <h2>About</h2>
+    <p>I'm an AI engineer at NJ Corporation, working remotely since January 2026. I build automations that connect language models to the tools a business already runs on, such as inboxes, spreadsheets, CRMs and help desks.</p>
+    <p>As CEO of Bajwa Traders, I also run a business day to day. That keeps my engineering practical: every system I build has to save real time and fit how people already work.</p>
+    <p>I'm pursuing a BSCS at the University of Central Punjab (2025–2029).</p>
+  </div>
+  <div class="facts">
+    <div class="fact ceo"><span>Chief Executive Officer</span><strong>Bajwa Traders</strong></div>
+    <div class="fact"><span>Artificial Intelligence Engineer</span><strong>NJ Corporation, since Jan 2026</strong></div>
+    <div class="fact"><span>BSCS, Computer Science</span><strong>University of Central Punjab, 2025–2029</strong></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2>AI automation projects</h2>
+  <p style="color:var(--mute);max-width:56ch;margin:-24px 0 40px">Five systems I build for businesses. Each one shows how the work flows from start to finish.</p>
+  <article class="proj"><div><h3>AI Customer Support Agent</h3><p>Instant, accurate answers around the clock, with a human stepping in only when it matters.</p><div class="tags"><span>E-commerce</span><span>SaaS</span><span>Clinics</span></div></div><ol class="flow"><li>Customer asks a question<small>chat, web or WhatsApp</small></li><li>Agent checks FAQs and order data<small>finds the real answer</small></li><li>Replies, or opens a ticket<small>escalates with the full conversation</small></li></ol></article>
+  <article class="proj"><div><h3>AI Document-to-Report Automation</h3><p>Turn piles of PDFs, spreadsheets and forms into a finished report without the manual copying.</p><div class="tags"><span>Businesses</span><span>HR</span><span>Accounting</span></div></div><ol class="flow"><li>Upload the files<small>PDFs, Excel, forms</small></li><li>AI extracts and summarizes<small>pulls out the figures that matter</small></li><li>Formatted report is ready<small>professional and ready to send</small></li></ol></article>
+  <article class="proj"><div><h3>AI Lead Follow-Up System</h3><p>Reply to every lead within minutes, and give your sales team only the ones worth calling.</p><div class="tags"><span>Real estate</span><span>Agencies</span><span>Education</span></div></div><ol class="flow"><li>New lead is captured<small>from forms, ads or messages</small></li><li>AI qualifies and writes a follow-up<small>personalized to the lead</small></li><li>Salesperson is alerted<small>when the lead is ready to talk</small></li></ol></article>
+  <article class="proj"><div><h3>AI Email Automation Agent</h3><p>An inbox that sorts itself, drafts the replies and keeps your CRM up to date.</p><div class="tags"><span>Any business that runs on email</span></div></div><ol class="flow"><li>Email arrives<small>any inbox</small></li><li>AI categorizes and drafts a reply<small>extracts tasks and deadlines</small></li><li>CRM updated, draft waiting<small>you approve with one click</small></li></ol></article>
+  <article class="proj"><div><h3>AI Business Dashboard Agent</h3><p>Skip the spreadsheet hunt. Get a short briefing on what changed in sales and marketing, and why.</p><div class="tags"><span>E-commerce</span><span>Agencies</span><span>Startups</span></div></div><ol class="flow"><li>Data is collected<small>from all your sources</small></li><li>AI analyzes trends<small>sales, ads, traffic</small></li><li>Insights are delivered<small>daily or weekly, in plain language</small></li></ol></article>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Have a process you want automated?</h2>
+  <p style="color:var(--mute);max-width:52ch;margin:0 0 24px">Tell me where your team's time goes, and I'll show you which automation fits.</p>
+  <a class="cta" href="https://www.linkedin.com/in/ajmal-abbas-a9273b378/" target="_blank" rel="noopener">Message Ajmal on LinkedIn</a>
+  <div class="social"><a href="https://www.linkedin.com/in/ajmal-abbas-a9273b378/" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.instagram.com/ajmal_bajwa1" target="_blank" rel="noopener">Instagram</a><a href="https://github.com/L1F25BSCS0501-Ajmal" target="_blank" rel="noopener">GitHub</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">Ajmal Abbas · AI Engineer · CEO of Bajwa Traders</div></footer>
+
+<script>
+(function(){
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var G='ABCDEFGHJKLMNPRSTUVWXYZ#%&*';
+  var chars=[];
+  document.querySelectorAll('.row').forEach(function(r,ri){
+    var t=r.dataset.t;
+    for(var i=0;i<t.length;i++){
+      var s=document.createElement('span');s.className='ch';s.textContent=rm?t[i]:G[Math.floor(Math.random()*G.length)];
+      s.setAttribute('aria-hidden','true');r.appendChild(s);chars.push(s);
+      if(!rm)decode(s,t[i],300+ri*350+i*130);
+    }
+  });
+  function decode(el,final,delay){
+    el.classList.add('scr');
+    setTimeout(function(){
+      var n=0,iv=setInterval(function(){
+        if(++n>9){clearInterval(iv);el.textContent=final;el.classList.remove('scr');el.classList.add('lock');
+          el.animate([{transform:'translateY(-14%) scale(1.12)'},{transform:'none'}],{duration:420,easing:'cubic-bezier(.2,.8,.2,1)'});return}
+        el.textContent=G[Math.floor(Math.random()*G.length)];
+      },55);
+    },delay);
+  }
+  var hero=document.querySelector('.hero'),glow=document.getElementById('glow');
+  function move(x,y){
+    var hr=hero.getBoundingClientRect();
+    glow.style.setProperty('--mx',(x-hr.left)+'px');glow.style.setProperty('--my',(y-hr.top)+'px');
+    if(rm)return;
+    chars.forEach(function(c){
+      var r=c.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2;
+      var dx=x-cx,dy=y-cy,d=Math.sqrt(dx*dx+dy*dy),p=Math.max(0,1-d/260);
+      c.style.transform=p>0?'translate('+(-dx*p*.12)+'px,'+(-dy*p*.18)+'px) scale('+(1+p*.28)+') rotate('+(dx*p*.03)+'deg)':'';
+      c.classList.toggle('hot',p>.45&&!c.classList.contains('scr'));
+    });
+  }
+  hero.addEventListener('pointermove',function(e){move(e.clientX,e.clientY)});
+  hero.addEventListener('pointerleave',function(){chars.forEach(function(c){c.style.transform='';c.classList.remove('hot')})});
+  // idle wave so the name stays alive without a pointer
+  if(!rm){
+    var t0=performance.now(),active=false;
+    hero.addEventListener('pointerenter',function(){active=true});
+    hero.addEventListener('pointerleave',function(){active=false});
+    (function loop(now){
+      if(!active&&now-t0>3200){
+        var k=(now-t0)/700;
+        chars.forEach(function(c,i){
+          if(c.classList.contains('scr'))return;
+          c.style.transform='translateY('+(Math.sin(k+i*.7)*-5)+'px)';
+        });
+      }
+      requestAnimationFrame(loop);
+    })(t0);
+  }
+})();
+</script>
+</body>
+</html>
